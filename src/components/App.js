@@ -1,15 +1,14 @@
 import './App.scss';
-
-import {Container, Form} from 'react-bootstrap';
-import Counter from "./Counter";
+import {Container} from 'react-bootstrap';
+import UsersFetch from "./UsersFetch";
+import TodosAxios from "./TodosAxios";
 
 function App() {
     return (
         <div className="App">
             <Container>
-                <Form>
-                    <Counter initialCount={0}/>
-                </Form>
+                <UsersFetch/>
+                <TodosAxios/>
             </Container>
         </div>
     );
